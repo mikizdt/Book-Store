@@ -1,0 +1,10 @@
+body {
+  font-family: monospace, sans-serif, Arial, Helvetica, sans-serif;
+  background-image: url("C:\Users\miche\bookstore\Bookstore\src\Components\bookstoreimage.webp"); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  height: 100%; /* Ensures the body takes up the full height of the viewport */
+  margin: 0; /* Removes any default margin */
+}
