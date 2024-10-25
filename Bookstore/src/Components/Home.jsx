@@ -1,6 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useState, useEffect } from "react";
 
 export default function Home() {
+  const [books, setBooks] = useEffect([]);
+
   return (
     <>
       <h1
@@ -12,9 +15,6 @@ export default function Home() {
       >
         BookSearch
       </h1>
-      <div className="p-2 fs-2  justify-content-center d-flex m-3  text-white">
-        👀 What books are you looking for?
-      </div>
 
       <nav className="bg-primary fs-5 justify-content-center">
         <ul className="d-flex list-unstyled justify-content-around text-white">
@@ -25,6 +25,9 @@ export default function Home() {
           <li>Suggest random book</li>
         </ul>
       </nav>
+      <div className="p-2 fs-2  justify-content-center d-flex m-3  text-primary">
+        👀 What books are you looking for?
+      </div>
       <div className="container  d-flex justify-content-center">
         <div className="search d-flex w-100 justify-content-center align-items-center">
           <input
@@ -40,6 +43,9 @@ export default function Home() {
             Search 📕
           </button>
         </div>
+      </div>
+      <div className="container text-primary fs-1 d-flex justify-content-center bg-white ">
+        Book
       </div>
     </>
   );
